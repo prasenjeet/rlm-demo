@@ -1,0 +1,12 @@
+{
+  "APP_ENV":   "development",
+  "PORT":      3000,
+  "LOG_LEVEL": "debug",
+  "DB_HOST":   "localhost",
+  "DB_PORT":   5432,
+  "DB_NAME":   "rlm_dev",
+  "FEATURE_FLAGS": {
+    "betaEndpoints": true,
+    "verboseLogging": true
+  }
+}

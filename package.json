@@ -1,0 +1,34 @@
+{
+  "name": "rlm-demo",
+  "version": "2.0.0",
+  "description": "Demo app for Release Lifecycle Management (RLM) workflow testing",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "APP_ENV=development nodemon src/app.js",
+    "test": "jest --coverage",
+    "lint": "eslint src/ scripts/",
+    "release:patch": "node scripts/release.js patch",
+    "release:minor": "node scripts/release.js minor",
+    "release:major": "node scripts/release.js major",
+    "changelog": "node scripts/generate-changelog.js",
+    "bump": "node scripts/bump-version.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

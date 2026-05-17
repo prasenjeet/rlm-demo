@@ -1,0 +1,12 @@
+{
+  "APP_ENV":   "production",
+  "PORT":      8080,
+  "LOG_LEVEL": "warn",
+  "DB_HOST":   "prod-db.internal",
+  "DB_PORT":   5432,
+  "DB_NAME":   "rlm_prod",
+  "FEATURE_FLAGS": {
+    "betaEndpoints": false,
+    "verboseLogging": false
+  }
+}

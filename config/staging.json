@@ -1,0 +1,12 @@
+{
+  "APP_ENV":   "staging",
+  "PORT":      8080,
+  "LOG_LEVEL": "info",
+  "DB_HOST":   "staging-db.internal",
+  "DB_PORT":   5432,
+  "DB_NAME":   "rlm_staging",
+  "FEATURE_FLAGS": {
+    "betaEndpoints": true,
+    "verboseLogging": false
+  }
+}
